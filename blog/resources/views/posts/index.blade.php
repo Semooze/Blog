@@ -15,7 +15,10 @@
                         {{ $post->title }}
                     </div>
                     <div class="card-block">
-                        {{ $post->body }}
+                        <p class="card-text">
+                            {{ $post->body }}
+                        </p>
+                        <a href="/posts/{{ $post->id }}" class="btn btn-primary">Read more</a>
                     </div>
                 </div>
             @endforeach
