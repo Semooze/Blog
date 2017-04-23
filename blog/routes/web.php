@@ -13,6 +13,8 @@
 
 Route::get('/', 'PostsController@index');
 
+Route::get('/posts', function () { return redirect('/'); });
+
 Route::get('/posts/create', 'PostsController@create');
 
 Route::get('/posts/{post}', 'PostsController@show');
