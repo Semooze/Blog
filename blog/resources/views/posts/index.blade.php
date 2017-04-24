@@ -13,7 +13,7 @@
                 </div>
                 <div class="card-block">
                     <p class="card-text">
-                        {{ $post->body }}
+                         @markdown($post->body)
                     </p>
                     <a href="/posts/{{ $post->id }}" class="btn btn-primary">Read more</a>
                 </div>
