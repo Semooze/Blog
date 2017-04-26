@@ -1,0 +1,22 @@
+version: '2.1'
+services:
+  db:
+    image: mysql:latest
+    volumes:
+        - dbdata:/var/lib/mysql
+    restart: always
+    environment:
+       MYSQL_ROOT_PASSWORD: password
+       MYSQL_DATABASE: blog
+       MYSQL_USER: root
+       MYSQL_PASSWORD: password
+  web:
+    build: .
+    command: /bin/bash start.sh
+    ports:
+      - "8001:8001"
+    depends_on:
+      db:
+        condition: service_started
+volumes:
+ dbdata:
