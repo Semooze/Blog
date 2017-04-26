@@ -86,7 +86,10 @@ git checkout docker
 docker-compose up
 ```
 
-__Plase make sure that__: your docker compose engine can use docker compose version 2.1 config file
+5 Open browser and type 127.0.0.1:8001 in address bar
+
+__Plase make sure that__: your docker compose engine can use docker compose version _2.1_ config file and no app using port _8001_ at the time.
+
 If it work properly you will see something like this [This](assets/InitApp.PNG)
 
 For more information about docker [click](https://www.docker.com/)
