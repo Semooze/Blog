@@ -1,5 +1,8 @@
-<footer class="bd-footer text-muted mt-5">
+<footer class="blog-footer">
     <div class="container">
-        <p>Create by sem</p>
+        <p>@Create by sem</p>
     </div>
+    <p>
+        <a href="#">Back to top</a>
+    </p>
 </footer>
