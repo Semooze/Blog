@@ -19,6 +19,6 @@ services:
       db:
         condition: service_started
     volumes:
-      - d:/Project/Blog/blog:/usr/src/
+      - ./blog:/usr/src
 volumes:
  dbdata:
